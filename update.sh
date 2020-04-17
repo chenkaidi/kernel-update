@@ -2,8 +2,6 @@
 
 #centos7 升级内核
 
-yum -y update
-
 #启用 ELRepo 仓库：
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
@@ -13,7 +11,7 @@ rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 #查看可用的系统内核包
 yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
 
-#安装最新内核:
+#安装最新内核: kernel-ml
 #yum --enablerepo=elrepo-kernel install kernel-ml -y
 
 #或者，安装长期支持版内核: kernel-lt
