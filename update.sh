@@ -12,10 +12,10 @@ rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
 
 #安装最新内核: kernel-ml
-#yum --enablerepo=elrepo-kernel install kernel-ml -y
+yum --enablerepo=elrepo-kernel install kernel-ml -y
 
 #或者，安装长期支持版内核: kernel-lt
-yum --enablerepo=elrepo-kernel install kernel-lt -y
+#yum --enablerepo=elrepo-kernel install kernel-lt -y
 
 #设置 grub2
 #通过 grub2-set-default 0 命令设置：
