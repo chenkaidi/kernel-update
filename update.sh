@@ -6,7 +6,7 @@
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
 #安装时候，查看最新的elrepo源：http://elrepo.org/tiki/tiki-index.php
-rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+rpm -Uvh http://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm
 
 #查看可用的系统内核包
 yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
