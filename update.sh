@@ -14,7 +14,7 @@ yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
 #安装主线mainline版本内核: kernel-ml
 #yum --enablerepo=elrepo-kernel install kernel-ml -y
 
-#安装长期longteam支持版本内核: kernel-lt
+#安装长期longterm支持版本内核: kernel-lt
 yum --enablerepo=elrepo-kernel install kernel-lt -y
 
 #设置 grub2
