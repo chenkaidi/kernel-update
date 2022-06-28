@@ -11,11 +11,11 @@ rpm -Uvh http://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm
 #查看可用的系统内核包
 yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
 
-#安装最新内核: kernel-ml
-yum --enablerepo=elrepo-kernel install kernel-ml -y
+#安装主线mainline版本内核: kernel-ml
+#yum --enablerepo=elrepo-kernel install kernel-ml -y
 
-#或者，安装长期支持版内核: kernel-lt
-#yum --enablerepo=elrepo-kernel install kernel-lt -y
+#安装长期longteam支持版本内核: kernel-lt
+yum --enablerepo=elrepo-kernel install kernel-lt -y
 
 #设置 grub2
 #通过 grub2-set-default 0 命令设置：
